@@ -111,4 +111,39 @@ body {
 .content img {
   float: right;
 }
+
+footer {
+  background-color: #212C36;
+  height: 100px;
+  width: 100%;
+  margin-top: 100px;
+  color: #D1EB94;
+}
+
+.icons {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+}
+
+.attribute {
+  position: relative;
+  top: 8px;
+}
+
+.footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 5px;
+}
 /*# sourceMappingURL=main.css.map */
