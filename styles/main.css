@@ -108,8 +108,27 @@ body {
   margin-top: 250px;
 }
 
-.content img {
-  float: right;
+.slideshow-container {
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+  left: 20%;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.nextBtn {
+  background-color: black;
 }
 
 footer {
@@ -145,5 +164,57 @@ footer {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-left: 5px;
+}
+
+@media only screen and (max-width: 850px) {
+  .fornt {
+    overflow: hidden;
+  }
+  .forntImage {
+    position: relative;
+    width: 1920px;
+    height: 980px;
+    right: 50%;
+  }
+  .intro {
+    width: 50%;
+    height: 980px;
+  }
+  .introText h1 {
+    font-size: 40px;
+  }
+  .introText h3 {
+    font-size: 30px;
+  }
+  .introText p {
+    font-size: 20px;
+  }
+  .content {
+    margin-top: 100px;
+  }
+  .content img {
+    position: relative;
+    width: 90%;
+    height: auto;
+    left: 5%;
+  }
+  .text {
+    width: 80%;
+  }
+  .text h2 {
+    font-size: 30px;
+  }
+  .mainText {
+    font-size: 20px;
+  }
+  .tech {
+    font-size: 10px;
+  }
+  .github {
+    font-size: 10px;
+  }
+  .prev, .next {
+    font-size: 11px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

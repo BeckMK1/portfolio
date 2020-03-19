@@ -1,3 +1,4 @@
+"use strict";
 // Firebase api
 const firebaseConfig = {
     apiKey: "AIzaSyDnt-baT-U1hylIlKeRNIK77BcI4dPGXs4",
@@ -43,9 +44,22 @@ htmlTemplate +=
         <a href="${aContent.github}">${aContent.github}</a>
     </div>
     </div>
-    <img src="${aContent.image}">
+
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="${aContent.image3}" id="lastImg">
+            <img src="${aContent.image1}">
+            <img src="${aContent.image2}">
+            <img src="${aContent.image3}">
+            <img src="${aContent.image1}" id="firstImg">
+        </div>
+        <button id="prevBtn">prev</button>
+        <button id="nextBtn">next</button>  
+    </div>
+
 </article>
 `
 }
 document.querySelector(".sub").innerHTML = htmlTemplate;
 }
+// --------------------- image slideshow -------------

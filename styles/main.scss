@@ -94,10 +94,26 @@ img{
     position: relative;
     right: 10%;
     margin-top: 250px;
-    img{
-    float: right;
     }
-    }
+    
+// ----------------------- slides show ----------------
+.slideshow-container{
+position: relative;
+   width: 60%;
+   overflow: hidden;
+   left: 20%;
+}
+.slide{
+ display: flex;
+width: 100%;
+ img{
+width: 100%;
+height: auto;
+ }   
+}
+.nextBtn{
+background-color: black;    
+}
 // ----------------------- email from -----------------
 
 //-------------------------- footer -------------------
@@ -125,4 +141,58 @@ top: 8px;
 display: flex;
 flex-direction: row;
 margin-left: 5px;
+}
+
+//--------------------- phone version --------------------
+@media only screen and (max-width: 850px){
+    .fornt{
+    overflow: hidden;
+    }
+    .forntImage{
+    position: relative;
+    width: 1920px;
+    height: 980px;
+    right: 50%;
+    }
+    .intro{
+    width: 50%;
+    height: 980px;
+    }
+    .introText{
+    h1{
+        font-size: 40px;
+    }
+    h3{
+    font-size: 30px;
+
+    }
+    p{
+    font-size: 20px;
+    }
+    }
+    .content{
+    margin-top: 100px;
+    img{
+    position: relative;
+    width: 90%;
+    height: auto;
+    left: 5%;
+    }
+    }
+    .text{
+        width: 80%;
+        h2{
+        font-size: 30px;
+        }
+}
+.mainText{
+    font-size: 20px;
+}
+.tech{
+    font-size:10px ;
+    }
+    .github{
+    font-size: 10px;
+    }
+    .prev, .next{font-size: 11px}
 }
