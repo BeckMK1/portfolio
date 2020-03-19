@@ -41,6 +41,11 @@ body {
   border-bottom: solid #C3E572;
 }
 
+.introText h2 {
+  font-size: 45px;
+  color: #C3E572;
+}
+
 .introText h3 {
   font-size: 40px;
   color: #D1EB94;
