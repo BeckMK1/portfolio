@@ -97,6 +97,7 @@ img{
     }
     
 // ----------------------- slides show ----------------
+// note: not working yet
 .slideshow-container{
 position: relative;
    width: 60%;
@@ -104,10 +105,12 @@ position: relative;
    left: 20%;
 }
 .slide{
- display: flex;
+display: flex;
+position: relative;
 width: 100%;
+left: 10px;
  img{
-width: 100%;
+width: 90%;
 height: auto;
  }   
 }
@@ -164,7 +167,6 @@ margin-left: 5px;
     }
     h3{
     font-size: 30px;
-
     }
     p{
     font-size: 20px;
@@ -172,12 +174,6 @@ margin-left: 5px;
     }
     .content{
     margin-top: 100px;
-    img{
-    position: relative;
-    width: 90%;
-    height: auto;
-    left: 5%;
-    }
     }
     .text{
         width: 80%;
@@ -194,5 +190,4 @@ margin-left: 5px;
     .github{
     font-size: 10px;
     }
-    .prev, .next{font-size: 11px}
 }

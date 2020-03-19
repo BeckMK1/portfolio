@@ -119,11 +119,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   width: 100%;
+  left: 10px;
 }
 
 .slide img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -192,12 +194,6 @@ footer {
   .content {
     margin-top: 100px;
   }
-  .content img {
-    position: relative;
-    width: 90%;
-    height: auto;
-    left: 5%;
-  }
   .text {
     width: 80%;
   }
@@ -212,9 +208,6 @@ footer {
   }
   .github {
     font-size: 10px;
-  }
-  .prev, .next {
-    font-size: 11px;
   }
 }
 /*# sourceMappingURL=main.css.map */

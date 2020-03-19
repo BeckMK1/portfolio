@@ -47,14 +47,8 @@ htmlTemplate +=
 
     <div class="slideshow-container">
         <div class="slide">
-            <img src="${aContent.image3}" id="lastImg">
             <img src="${aContent.image1}">
-            <img src="${aContent.image2}">
-            <img src="${aContent.image3}">
-            <img src="${aContent.image1}" id="firstImg">
-        </div>
-        <button id="prevBtn">prev</button>
-        <button id="nextBtn">next</button>  
+        </div>  
     </div>
 
 </article>
@@ -63,3 +57,17 @@ htmlTemplate +=
 document.querySelector(".sub").innerHTML = htmlTemplate;
 }
 // --------------------- image slideshow -------------
+// note: not working yet
+
+// const slide = document.querySelector('.slide')
+// const images = document.querySelector('.slide img')
+
+// // buttons
+// const prevBtn = document.querySelector('#prevBtn');
+// const nextBtn = document.querySelector('#nextBtn');
+
+// // counter
+// let counter = 1;
+// const size = images[0].clientWidth;
+
+// slide.style.transform = 'translateX('+ (-size * counter) +'px)'
