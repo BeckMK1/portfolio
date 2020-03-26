@@ -62,12 +62,13 @@ document.querySelector(".sub").innerHTML = htmlTemplate;
 // const slide = document.querySelector('.slide')
 // const images = document.querySelector('.slide img')
 
-// // buttons
+// buttons
 // const prevBtn = document.querySelector('#prevBtn');
 // const nextBtn = document.querySelector('#nextBtn');
 
-// // counter
+// counter
 // let counter = 1;
 // const size = images[0].clientWidth;
 
 // slide.style.transform = 'translateX('+ (-size * counter) +'px)'
+
