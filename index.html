@@ -1,72 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mikkel Beck Knudsen</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
-<body>
-<!---------------------------- front page ---------------------------------->
-<div class="fornt">
 
-    <div class="intro">
-        <div class="introText">
-            <h1>Mikkel Beck Knudsen</h1>
-            <h2>frontend developer</h2>
-            <h3>Making well structured, efficient and beautiful websites is what I strive to achieve.</h3>
-            <p>HTML, JavaScript, CSS, Sass, Firebase.</p>
+<body onhashchange="pageChange()">
+    <div id="home" class="page">
+        <!---------------------------- front page ---------------------------------->
+        <div class="fornt">
+
+            <div class="intro">
+                <div class="introText">
+                    <h1>Mikkel Beck Knudsen</h1>
+                    <h2>frontend developer</h2>
+                    <h3>Making well structured, efficient and beautiful websites is what I strive to achieve.</h3>
+                    <p>HTML, JavaScript, CSS, Sass, Firebase.</p>
+                </div>
+            </div>
+            <div class="forntImage">
+                <img src="images/frontImg.jpg" alt="coding">
+            </div>
         </div>
-    </div>
-    <div class="forntImage">
-        <img src="images/frontImg.jpg" alt="coding">
-    </div>
-</div>
-<!------------------------ splitter  ------------------------------------------>
-<!-- work -->
-    <div id="work" class="split">
-        <div id="blackOut-work" class="split-blackOut"></div>
+        <!------------------------ splitter  ------------------------------------------>
+        <!-- work -->
+        <div id="work" class="split" onclick="navWork()">
+            <div id="blackOut-work" class="split-blackOut"></div>
             <img src="images/work.png" alt="work">
-        <div class="split-text">
-            <h2>Work</h2>
-    </div>
-</div>
-<!-- me -->
-    <div id="me" class="split">
-        <div id="blackOut-me" class="split-blackOut"></div>
+            <div class="split-text">
+                <h2>My Work</h2>
+            </div>
+        </div>
+        <!-- about -->
+        <div id="me" class="split" onclick="navMe()">
+            <div id="blackOut-me" class="split-blackOut"></div>
             <img src="images/work.png" alt="me">
-        <div class="split-text">
-            <h2>About me</h2>
+            <div class="split-text">
+                <h2>About me</h2>
+            </div>
+        </div>
+        <!-- contact -->
+        <div id="contact">
+            <p>contact</p>
+            <div class="down-arrow"></div>
         </div>
     </div>
-<!-- contact -->
-<div id="contact">
-<p>contact</p>
-<div class="down-arrow"></div>
-</div>
-<!------------------------ sub content ---------------------------------------->
-<div class="sub"></div>
-<footer>
-<div class="footerContent">
-    <div class="footText">
-        <p>Email: mikkelBeckk@gmail.com</p>
-        <a href="https://github.com/BeckMK1/portfolio">link to this sites repository</a>
+
+    <!------------------------ sub content ---------------------------------------->
+    <div id="work-content" class="page">
+        <div class="back" onclick="navback()">
+            <div class="back-arrow" ></div>
+        </div>
+        <div id="work-container"></div>
     </div>
-    <div class="icons">
-      <a href="www.linkedin.com/in/mikkelbeckknudsen"><img src="images/linkedin.png" alt="linkind"></a>
-      <a href="https://github.com/BeckMK1?tab=repositories"><img src="/images/github.png" alt="github"></a>
+    <div id="about" class="page">
+        <div class="back" onclick="navback()">
+            <div class="back-arrow"></div>
+        </div>
+        <div id="about-container">
+            <div class="about-image">
+            <img src="/images/photoPlaceholder.png" alt="mikkel beck Knudsen">
+            </div>  
+            <div class="about-text">
+            <p>I love tech and computers and I have always know that this was the field I wanted to work in.<br>
+                I love solving problems and learning new things.<br> this started with a interest in video games because video games<br> are all about learning about the its mechanics and the use those<br> mechanics to solves the various problems the game might throw at you.<br>
+                i find code very similar in the sense, that you learn a language and try to apply what you<br> have learned to build a product.<br>
+                <br>
+                I want want to create something of value, something that make people's lives better.<br>
+                and I want to bring value to every project i work on.           
+                </p>
+            </div>
+        </div>
     </div>
-</div>
-    <div class="attribute">
-        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-    </div>
-</footer>
-<!--------------------------------- scrips  ----------------------------------->
-<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
-<!-- TODO: Add SDKs for Firebase products that you want to use -->
-<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
-<script src="js/main.js"></script>
-<script src="js/funtions/content.js"></script>
+    <!------------------------- footer -------------------------------------------->
+    <footer>
+        <div class="footerContent">
+            <div class="footText">
+                <p>Email: mikkelBeckk@gmail.com</p>
+                <a href="https://github.com/BeckMK1/portfolio">link to this sites repository</a>
+            </div>
+            <div class="icons">
+                <a href="www.linkedin.com/in/mikkelbeckknudsen"><img src="images/linkedin.png" alt="linkind"></a>
+                <a href="https://github.com/BeckMK1?tab=repositories"><img src="/images/github.png" alt="github"></a>
+            </div>
+        </div>
+        <div class="attribute">
+            Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        </div>
+    </footer>
+    <!--------------------------------- scrips  ----------------------------------->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/funtions/content.js"></script>
 </body>
+
 </html>

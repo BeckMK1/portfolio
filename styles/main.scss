@@ -3,257 +3,409 @@ $green: #212C36;
 $title:#C3E572;
 $intro:#D1EB94;
 $tool:#D4E2B3;
+$liteGreen:#729bc0;
+
 // --------------------------
-body{
-margin: 0;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 // -------------------front page-------------------
 // styling the size for the front page
-.front{
+.front {
     width: 100%;
-    height:80%;
+    height: 80%;
     overflow-x: hidden;
 }
+
 // styling the size and z-index for the image on the front page 
-.forntImage{
+.forntImage {
     z-index: -1;
     overflow: hidden;
-img{
-    height: 980px;
-    width: 100%;
+
+    img {
+        height: 980px;
+        width: 100%;
+    }
 }
-}
+
 // stying the box with the text in it
-.intro{
+.intro {
     width: 500px;
-    background-color:$green;
+    background-color: $green;
     height: auto;
     position: absolute;
     z-index: 1;
     height: 100%;
 }
+
 // styling the text it self 
-.introText{
+.introText {
     position: relative;
     top: 10%;
     margin-left: 20px;
     margin-right: 20px;
-    h1{
+
+    h1 {
         font-size: 50px;
         color: $title;
         border-bottom: solid $title;
     }
-    h2{
+
+    h2 {
         font-size: 45px;
         color: $title;
     }
-    h3{
+
+    h3 {
         font-size: 40px;
         color: $intro;
     }
-    p{
+
+    p {
         font-size: 30px;
         color: $tool;
     }
 }
+
 // ---------------------- splitter ------------------------------
-.split{
+.split {
     width: 50%;
-    height:717.58px;
+    height: 717.58px;
     position: relative;
     bottom: 5px;
     float: left;
-img{
-position: absolute;
-width: 100%;
-height: auto;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
 }
-} 
-.split-text{
-display: flex;
-position: relative;
-z-index: 1;
-width: 100%;
-height: 100%;
-justify-content: center;
-align-items: center;
-color: white;
-h2{
-font-size: 50px;
-}
-}
-.split-blackOut{
-position: absolute;
-width: 100%;
-height:100%;
-z-index: 2;
-background-color:black;
-opacity: 90%;
-}
-#me{
-float: right;
-}
-// --------------------- down-arrow -------------------------
-#contact{
-width: 100%;
-height: 150px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-.down-arrow{
+
+.split-text {
+    display: flex;
     position: relative;
-    animation: down 1s linear 2s infinite alternate;
-    width: 0; 
-    height: 0; 
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 50px solid $green; 
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    h2 {
+        font-size: 50px;
+    }
 }
-p{
-font-weight: bold;
-font-size: 30px;
+
+.split-blackOut {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: black;
+    opacity: 90%;
 }
+
+#me {
+    float: right;
 }
-@keyframes down{
-0% {top:0px};
-100% {top:20px};
+
+// --------------------- down-arrow -------------------------
+#contact {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .down-arrow {
+        position: relative;
+        animation: down 1s linear 2s infinite alternate;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid $green;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 30px;
+    }
 }
+
+@keyframes down {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
 // ----------------------sub (content)-----------------------
-    .sub{
+.sub {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    }
-    // styling all the text
-    .text{
+}
+
+// styling all the text
+.text {
     position: relative;
     left: 20%;
     width: 30%;
     float: left;
-    h2{
-    font-size: 40px;
+
+    h2 {
+        font-size: 40px;
     }
+
     // styling just the main text
-    }
-    .mainText{
+}
+
+.mainText {
     font-size: 30px;
     // styling the Technology part of the text
-    }
-    .tech{
-    font-size:20px ;
-    }
-    // styling the github link and text
-    .github{
+}
+
+.tech {
+    font-size: 20px;
+}
+
+// styling the github link and text
+.github {
     font-size: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    p{
-    margin-right: 2px;
+
+    p {
+        margin-right: 2px;
     }
+
     // styling the over all content and image
-    }
-    .content{
+}
+
+.content {
     position: relative;
-    right: 10%;
     margin-top: 250px;
+    background-color: #729bc0;
+}
+.back{
+position: fixed;
+width: 75px;
+height: 75px;
+border-radius: 40px;
+background-color: $green;
+display: flex;
+justify-content: center;
+align-items: center;
+left: 20px;
+top: 20px;
+z-index: 1;
+}
+.back-arrow{
+    position: relative;
+    right: 5px;
+    width: 0; 
+    height: 0; 
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent; 
+    border-right: 25px solid white;
+}
+// ------------------------- about --------------------
+#about-container{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+background-color: $liteGreen;
+align-items: center;
+flex-direction: column;
+}
+.about-text{
+width: 50%;
+height: auto;
+text-align: center;
+}
+.about-image{
+width:57px;
+height: 67px;
+height: auto;
+background-color: white;
+border-radius: 40px;
+padding: 5px 10px 10px 10px;
+}
+#moreAni{
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 100px;
+height: auto;
+p{
+margin-left: 2px;
+}
+}
+.arrow1-ani{
+position: relative;
+font-size: 20px;
+animation: arrow1 1s linear 2s infinite;
+}
+@keyframes arrow1{
+    0%{
+    left: 0px;
     }
-    
+    100%{
+    left: 10px;
+    }
+    }
+.arrow2-ani{
+position: relative;
+font-size: 20px;
+    animation: arrow2 1s linear 2s infinite ;
+}
+@keyframes arrow2{
+0%{
+left: 0px; 
+top:0px;
+opacity: 100%;
+}
+25%{
+left: 5px;
+opacity: 80%;
+}
+50%{
+left: 10px;
+opacity: 50%;
+bottom: 2px;
+}
+75%{
+    left: 15px;
+    bottom: 4px;
+    opacity: 25%;   
+}
+100%{
+left: 20px;
+bottom:6px;
+opacity: 0%;
+}
+}
 // ----------------------- slides show ----------------
 // note: not working yet
-.slideshow-container{
-position: relative;
-   width: 60%;
-   overflow: hidden;
-   left: 20%;
+.slideshow-container {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    left: 20%;
 }
-.slide{
-display: flex;
-position: relative;
-width: 100%;
-left: 10px;
- img{
-width: 90%;
-height: auto;
- }   
+
+.slide {
+    display: flex;
+    position: relative;
+    width: 100%;
+    left: 10px;
+
+    img {
+        width: 90%;
+        height: auto;
+    }
 }
-.nextBtn{
-background-color: black;    
+
+.nextBtn {
+    background-color: black;
 }
+
 // ----------------------- email from -----------------
 
 //-------------------------- footer -------------------
-footer{
-background-color:$green;
-height: 105px;
-width: 100%;
-margin-top: 100px;
-color: $intro;
+footer {
+    background-color: $green;
+    height: 105px;
+    width: 100%;
+    margin-top: 100px;
+    color: $intro;
 }
-.icons{
-margin-left: 20px;
-margin-top: 15px;
-img{
-width: 50px;
-height: 50px;
-margin-left: 5px;
+
+.icons {
+    margin-left: 20px;
+    margin-top: 15px;
+
+    img {
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
+    }
 }
+
+.attribute {
+    position: relative;
+    top: 8px;
 }
-.attribute{
-position: relative;
-top: 8px;
-}
-.footerContent{
-display: flex;
-flex-direction: row;
-margin-left: 5px;
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
 }
 
 //--------------------- phone version --------------------
-@media only screen and (max-width: 850px){
-    .fornt{
-    overflow: hidden;
+@media only screen and (max-width: 850px) {
+    .fornt {
+        overflow: hidden;
     }
-    .forntImage{
-    position: relative;
-    width: 1920px;
-    height: 980px;
-    right: 50%;
+
+    .forntImage {
+        position: relative;
+        width: 1920px;
+        height: 980px;
+        right: 50%;
     }
-    .intro{
-    width: 50%;
-    height: 980px;
+
+    .intro {
+        width: 50%;
+        height: 980px;
     }
-    .introText{
-    h1{
-        font-size: 40px;
-    }
-    h3{
-    font-size: 30px;
-    }
-    p{
-    font-size: 20px;
-    }
-    }
-    .content{
-    margin-top: 100px;
-    }
-    .text{
-        width: 80%;
-        h2{
-        font-size: 30px;
+
+    .introText {
+        h1 {
+            font-size: 40px;
         }
-}
-.mainText{
-    font-size: 20px;
-}
-.tech{
-    font-size:10px ;
+
+        h3 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
     }
-    .github{
-    font-size: 10px;
+
+    .content {
+        margin-top: 100px;
+    }
+
+    .text {
+        width: 80%;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .mainText {
+        font-size: 20px;
+    }
+
+    .tech {
+        font-size: 10px;
+    }
+
+    .github {
+        font-size: 10px;
     }
 }

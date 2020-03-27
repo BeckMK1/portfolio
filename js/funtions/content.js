@@ -39,6 +39,11 @@ htmlTemplate +=
         <h2>${aContent.title}</h2>
         <p class="mainText">${aContent.text}</p>
         <p class ="tech">${aContent.tech}</p>
+        <div id="moreAni">
+        <a class="more" href="#more">read more</a>
+        <p class="arrow1">></p>
+        <p class="arrow2">></p>
+        </div>
     <div class="github">
         <p>GitHub:</p>
         <a href="${aContent.github}">${aContent.github}</a>
@@ -54,7 +59,7 @@ htmlTemplate +=
 </article>
 `
 }
-document.querySelector(".sub").innerHTML = htmlTemplate;
+document.querySelector("#work-container").innerHTML = htmlTemplate;
 }
 // --------------------- image slideshow -------------
 // note: not working yet
