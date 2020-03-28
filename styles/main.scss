@@ -241,7 +241,7 @@ background-color: white;
 border-radius: 40px;
 padding: 5px 10px 10px 10px;
 }
-#moreAni{
+.moreAni{
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -254,7 +254,7 @@ margin-left: 2px;
 .arrow1-ani{
 position: relative;
 font-size: 20px;
-animation: arrow1 1s linear 2s infinite;
+animation: arrow1 1s linear infinite;
 }
 @keyframes arrow1{
     0%{
@@ -267,7 +267,7 @@ animation: arrow1 1s linear 2s infinite;
 .arrow2-ani{
 position: relative;
 font-size: 20px;
-    animation: arrow2 1s linear 2s infinite ;
+    animation: arrow2 1s linear infinite ;
 }
 @keyframes arrow2{
 0%{

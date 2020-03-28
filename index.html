@@ -25,23 +25,92 @@
                 <img src="images/frontImg.jpg" alt="coding">
             </div>
         </div>
-        <!------------------------ splitter  ------------------------------------------>
-        <!-- work -->
-        <div id="work" class="split" onclick="navWork()">
-            <div id="blackOut-work" class="split-blackOut"></div>
-            <img src="images/work.png" alt="work">
-            <div class="split-text">
-                <h2>My Work</h2>
+
+
+        <!------------------------ sub content ---------------------------------------->
+        <div id="work-content">
+            <div class="back" onclick="navback()">
+                <div class="back-arrow"></div>
+            </div>
+            <div id="work-container">
+                <!-- gaming-match -->
+                <div class="gaming-match">
+                    <div class="text">
+                        <h2>gaming match</h2>
+                        <p class="mainText">My first firebase project. it was a group project where we were takst making
+                            a web-app. gaming-match is a web-app about finding people to play videogames with. </p>
+                            <div id="moreAni1" class="moreAni">
+                                <a class="more" href="#more">link to the website</a>
+                                <p class="arrow1">></p>
+                                <p class="arrow2">></p>
+                            </div>
+                    </div>
+         
+                    <div class="slideshow-container">
+                        <div class="slide">
+                            <img src="images/gaming-match/gaming-match.png" alt="gaming-match">
+                        </div>
+                    </div>
+                </div>
+                <!-- playbet -->
+                <div class="paly-bet">
+                    <div class="text">
+                        <h2>Playbet</h2>
+                        <p class="mainText">a prototype made for playground Entertainment as a group school project.
+                            playbet is a live sport betting app hver you bet a fake currency that you can use on prizes.
+                            first project where i used jquery, and one for my first javaScript projects. Note: look en
+                            new code for final code.</p>
+                            <div id="moreAni2" class="moreAni">
+                                <a class="more" href="#more">link to the website</a>
+                                <p class="arrow1">></p>
+                                <p class="arrow2">></p>
+                            </div>
+                    </div>
+                    <div class="slideshow-container">
+                        <div class="slide">
+                            <img src="images/palybet/playbet.png" alt="playbet">
+                        </div>
+                    </div>
+                </div>
+                <!-- assens-shipyard -->
+                <div class="assens-shipyard">
+                    <div class="text">
+                        <h2>assens-shipyard</h2>
+                        <p class="mainText">This was my group examen project and the frist time I used Sass. it is a
+                            redesign of Assens shipyard's website.</p>
+                            <div id="moreAni3" class="moreAni">
+                                <a class="more" href="#more">link to the website</a>
+                                <p class="arrow1">></p>
+                                <p class="arrow2">></p>
+                            </div>
+                    </div>
+                    <div class="slideshow-container">
+                        <div class="slide">
+                            <img src="images/shipyard/shipyard.png" alt="shipyard">
+                        </div>
+                    </div>
+                </div>
+                <!-- web-doc -->
+                <div class="web-doc">
+                    <div class="text">
+                        <h2>web-doc</h2>
+                        <p class="mainText">Web-doc this was a group project where we made a web-doc for a efterskole in
+                            order to attract more students.</p>
+                            <div id="moreAni4" class="moreAni">
+                                <a class="more" href="#more">link to the website</a>
+                                <p class="arrow1">></p>
+                                <p class="arrow2">></p>
+                            </div>
+                    </div>
+                    <div class="slideshow-container">
+                        <div class="slide">
+                            <img src="images/web-doc/web-doc.PNG" alt="web-doc">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- about -->
-        <div id="me" class="split" onclick="navMe()">
-            <div id="blackOut-me" class="split-blackOut"></div>
-            <img src="images/work.png" alt="me">
-            <div class="split-text">
-                <h2>About me</h2>
-            </div>
-        </div>
+        <!------------------------- footer -------------------------------------------->
         <!-- contact -->
         <div id="contact">
             <p>contact</p>
@@ -49,33 +118,6 @@
         </div>
     </div>
 
-    <!------------------------ sub content ---------------------------------------->
-    <div id="work-content" class="page">
-        <div class="back" onclick="navback()">
-            <div class="back-arrow" ></div>
-        </div>
-        <div id="work-container"></div>
-    </div>
-    <div id="about" class="page">
-        <div class="back" onclick="navback()">
-            <div class="back-arrow"></div>
-        </div>
-        <div id="about-container">
-            <div class="about-image">
-            <img src="/images/photoPlaceholder.png" alt="mikkel beck Knudsen">
-            </div>  
-            <div class="about-text">
-            <p>I love tech and computers and I have always know that this was the field I wanted to work in.<br>
-                I love solving problems and learning new things.<br> this started with a interest in video games because video games<br> are all about learning about the its mechanics and the use those<br> mechanics to solves the various problems the game might throw at you.<br>
-                i find code very similar in the sense, that you learn a language and try to apply what you<br> have learned to build a product.<br>
-                <br>
-                I want want to create something of value, something that make people's lives better.<br>
-                and I want to bring value to every project i work on.           
-                </p>
-            </div>
-        </div>
-    </div>
-    <!------------------------- footer -------------------------------------------->
     <footer>
         <div class="footerContent">
             <div class="footText">
@@ -98,7 +140,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/funtions/content.js"></script>
+    <script src="js/content.js"></script>
 </body>
 
 </html>

@@ -1,74 +1,112 @@
 "use strict";
-// -------------------- splitter -----------------------
-// work
-document.getElementById("work").addEventListener("mouseover", workOver);
-document.getElementById("work").addEventListener("mouseout", workOut);
-
-function workOver() {
-    document.querySelector("#blackOut-work").style.opacity = "0%";
-}
-
-function workOut() {
-    document.querySelector("#blackOut-work").style.opacity = "90%";
-}
-// me
-document.getElementById("me").addEventListener("mouseover", meOver);
-document.getElementById("me").addEventListener("mouseout", meOut);
-
-function meOver() {
-    document.querySelector("#blackOut-me").style.opacity = "0%";
-}
-
-function meOut() {
-    document.querySelector("#blackOut-me").style.opacity = "90%";
-}
-//---------------------- spa --------------------------
-// hide all
-function hideAllPages() {
-    let pages = document.querySelectorAll(".page");
-    for (let page of pages) {
-        page.style.display = "none";
-    }
-}
-// show pages
-function showPage(pageId) {
-    hideAllPages();
-    document.querySelector(`#${pageId}`).style.display = "block";
-}
-
-
-// navigate to
-function navigateTo(pageId) {
-    location.href = `#${pageId}`;
-}
-
-function pageChange() {
-    let page = "home";
-    if (location.hash) {
-        page = location.hash.slice(1);
-    }
-    showPage(page)
-}
-pageChange();
-// ----------------------- nav -----------------------------
-function navWork(){
-navigateTo("work-content");
-}
-function navMe(){
-navigateTo("about")
-}
-// ----------------------- back ----------------------------
-function navback(){
-navigateTo("home");
-}
 //------------------------- arrow animataion ----------------
-window.onload=function(){
-document.getElementById("moreAni").addEventListener("mouseover", setActiveAni)
+//------------------------- mouse over ----------------------
+document.querySelector("#moreAni1").addEventListener("mouseover", setActiveAni)
+document.querySelector("#moreAni2").addEventListener("mouseover", setActiveAni2)
+document.querySelector("#moreAni3").addEventListener("mouseover", setActiveAni3)
+document.querySelector("#moreAni4").addEventListener("mouseover", setActiveAni4)
+
+
+
 
 function setActiveAni() {
-    let arrow1 = document.querySelector(".arrow1");
-    arrow1.classList.add("arrow1-ani");
-    let arrow2 =document.querySelector(".arrow2");
-    arrow2.classList.add("arrow2-ani");
+    let arrow1 = document.querySelectorAll("#moreAni1 .arrow1");
+
+    for (let arrow1s of arrow1){
+        arrow1s.classList.add("arrow1-ani");
     }
-} 
+    let arrow2 =document.querySelectorAll("#moreAni1 .arrow2");
+    for (let arrow2s of arrow2){
+        arrow2s.classList.add("arrow2-ani");
+    }
+    };
+
+    function setActiveAni2() {
+        let arrow1 = document.querySelectorAll("#moreAni2 .arrow1");
+    
+        for (let arrow1s of arrow1){
+            arrow1s.classList.add("arrow1-ani");
+        }
+        let arrow2 =document.querySelectorAll("#moreAni2 .arrow2");
+        for (let arrow2s of arrow2){
+            arrow2s.classList.add("arrow2-ani");
+        }
+        };
+
+        function setActiveAni3() {
+            let arrow1 = document.querySelectorAll("#moreAni3 .arrow1");
+        
+            for (let arrow1s of arrow1){
+                arrow1s.classList.add("arrow1-ani");
+            }
+            let arrow2 =document.querySelectorAll("#moreAni3 .arrow2");
+            for (let arrow2s of arrow2){
+                arrow2s.classList.add("arrow2-ani");
+            }
+            };
+
+            function setActiveAni4() {
+                let arrow1 = document.querySelectorAll("#moreAni4 .arrow1");
+            
+                for (let arrow1s of arrow1){
+                    arrow1s.classList.add("arrow1-ani");
+                }
+                let arrow2 =document.querySelectorAll("#moreAni4 .arrow2");
+                for (let arrow2s of arrow2){
+                    arrow2s.classList.add("arrow2-ani");
+                }
+                };
+
+// ------------------------ mouse out ------------------------------
+document.querySelector("#moreAni1").addEventListener("mouseout", removeActiveAni)
+document.querySelector("#moreAni2").addEventListener("mouseout", removeActiveAni2)
+document.querySelector("#moreAni3").addEventListener("mouseout", removeActiveAni3)
+document.querySelector("#moreAni4").addEventListener("mouseout", removeActiveAni4)
+
+function removeActiveAni() {
+    let arrow1 = document.querySelectorAll("#moreAni1 .arrow1");
+
+    for (let arrow1s of arrow1){
+        arrow1s.classList.remove("arrow1-ani");
+    }
+    let arrow2 =document.querySelectorAll("#moreAni1 .arrow2");
+    for (let arrow2s of arrow2){
+        arrow2s.classList.remove("arrow2-ani");
+    }
+    };
+
+    function removeActiveAni2() {
+        let arrow1 = document.querySelectorAll("#moreAni2 .arrow1");
+    
+        for (let arrow1s of arrow1){
+            arrow1s.classList.remove("arrow1-ani");
+        }
+        let arrow2 =document.querySelectorAll("#moreAni2 .arrow2");
+        for (let arrow2s of arrow2){
+            arrow2s.classList.remove("arrow2-ani");
+        }
+        };
+
+        function removeActiveAni3() {
+            let arrow1 = document.querySelectorAll("#moreAni3 .arrow1");
+        
+            for (let arrow1s of arrow1){
+                arrow1s.classList.remove("arrow1-ani");
+            }
+            let arrow2 =document.querySelectorAll("#moreAni3 .arrow2");
+            for (let arrow2s of arrow2){
+                arrow2s.classList.remove("arrow2-ani");
+            }
+            };
+
+            function removeActiveAni4() {
+                let arrow1 = document.querySelectorAll("#moreAni4 .arrow1");
+            
+                for (let arrow1s of arrow1){
+                    arrow1s.classList.remove("arrow1-ani");
+                }
+                let arrow2 =document.querySelectorAll("#moreAni4 .arrow2");
+                for (let arrow2s of arrow2){
+                    arrow2s.classList.remove("arrow2-ani");
+                }
+                };
