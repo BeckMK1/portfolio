@@ -173,74 +173,14 @@ body {
     // styling the Technology part of the text
 }
 
-.tech {
-    font-size: 20px;
-}
-
-// styling the github link and text
-.github {
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    p {
-        margin-right: 2px;
-    }
-
     // styling the over all content and image
-}
 
 .content {
     position: relative;
-    margin-top: 250px;
+    margin-top: 50px;
     background-color: #729bc0;
 }
-.back{
-position: fixed;
-width: 75px;
-height: 75px;
-border-radius: 40px;
-background-color: $green;
-display: flex;
-justify-content: center;
-align-items: center;
-left: 20px;
-top: 20px;
-z-index: 1;
-}
-.back-arrow{
-    position: relative;
-    right: 5px;
-    width: 0; 
-    height: 0; 
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent; 
-    border-right: 25px solid white;
-}
-// ------------------------- about --------------------
-#about-container{
-width: 100%;
-height: auto;
-display: flex;
-justify-content: center;
-background-color: $liteGreen;
-align-items: center;
-flex-direction: column;
-}
-.about-text{
-width: 50%;
-height: auto;
-text-align: center;
-}
-.about-image{
-width:57px;
-height: 67px;
-height: auto;
-background-color: white;
-border-radius: 40px;
-padding: 5px 10px 10px 10px;
-}
+// ---------------------- arrow animation ----------------------
 .moreAni{
 display: flex;
 flex-direction: row;
