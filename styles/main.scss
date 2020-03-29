@@ -69,49 +69,6 @@ body {
     }
 }
 
-// ---------------------- splitter ------------------------------
-.split {
-    width: 50%;
-    height: 717.58px;
-    position: relative;
-    bottom: 5px;
-    float: left;
-
-    img {
-        position: absolute;
-        width: 100%;
-        height: auto;
-    }
-}
-
-.split-text {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-    h2 {
-        font-size: 50px;
-    }
-}
-
-.split-blackOut {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    background-color: black;
-    opacity: 90%;
-}
-
-#me {
-    float: right;
-}
-
 // --------------------- down-arrow -------------------------
 #contact {
     width: 100%;
@@ -160,16 +117,16 @@ body {
     left: 20%;
     width: 30%;
     float: left;
-
+z-index: 2;
     h2 {
-        font-size: 40px;
+        font-size: 24px;
     }
 
     // styling just the main text
 }
 
 .mainText {
-    font-size: 30px;
+    font-size: 12px;
     // styling the Technology part of the text
 }
 
@@ -178,15 +135,59 @@ body {
 .content {
     position: relative;
     margin-top: 50px;
-    background-color: #729bc0;
+    background-color:#f5f0f0;
+    overflow: hidden;
+
+}
+.cornered{
+position: absolute;
+z-index: 1;
+    width: 56%;
+    height:0px;
+    border-top:441px solid #f5f0f0;
+    border-right: 90px solid transparent;
+}
+.image{
+position: relative;
+width: 69%;
+height: 440px;
+float: right;
+left: 25%;
+z-index: 0;
+overflow: hidden;
+img{
+width: 70%;
+height: auto;
+}
+}
+.flip{
+display: flex;
+flex-direction: row;
+.text{
+left:50%;
+float: left;
+}
+.image{
+left: -30%;
+}
+.cornered{
+left: 40%;
+    border-top:441px solid #f5f0f0;
+    border-left: 90px solid transparent;
+}
 }
 // ---------------------- arrow animation ----------------------
+.more{
+    text-decoration: none;
+    color:black
+}
 .moreAni{
 display: flex;
 flex-direction: row;
 align-items: center;
-width: 100px;
+width: 40%;
 height: auto;
+font-size: 20px;
 p{
 margin-left: 2px;
 }
@@ -194,16 +195,34 @@ margin-left: 2px;
 .arrow1-ani{
 position: relative;
 font-size: 20px;
-animation: arrow1 1s linear infinite;
+animation: arrow1 1s linear 0.1s infinite;
 }
 @keyframes arrow1{
     0%{
-    left: 0px;
-    }
-    100%{
-    left: 10px;
-    }
-    }
+        left: 0px; 
+        top:0px;
+        opacity: 100%;
+        }
+        25%{
+        left: 5px;
+        opacity: 80%;
+        }
+        50%{
+        left: 10px;
+        opacity: 50%;
+        bottom: 2px;
+        }
+        75%{
+            left: 15px;
+            bottom: 4px;
+            opacity: 25%;   
+        }
+        100%{
+        left: 20px;
+        bottom:6px;
+        opacity: 0%;
+        }
+        }
 .arrow2-ani{
 position: relative;
 font-size: 20px;
@@ -239,7 +258,7 @@ opacity: 0%;
 // note: not working yet
 .slideshow-container {
     position: relative;
-    width: 60%;
+    width: 50%;
     overflow: hidden;
     left: 20%;
 }
@@ -249,7 +268,6 @@ opacity: 0%;
     position: relative;
     width: 100%;
     left: 10px;
-
     img {
         width: 90%;
         height: auto;
@@ -295,57 +313,53 @@ footer {
 
 //--------------------- phone version --------------------
 @media only screen and (max-width: 850px) {
-    .fornt {
-        overflow: hidden;
+.intro{
+width:100px ;
+height: 28%;
+}
+.content{
+height:200px;
+width: 100%;
+}
+
+.slideshow-container {
+    img {
+        width: auto;
+        height: 200px;
+    }
+}
+.introText {
+    h1 {
+        font-size: 15px;
+
     }
 
-    .forntImage {
-        position: relative;
-        width: 1920px;
-        height: 980px;
-        right: 50%;
-    }
-
-    .intro {
-        width: 50%;
-        height: 980px;
-    }
-
-    .introText {
-        h1 {
-            font-size: 40px;
-        }
-
-        h3 {
-            font-size: 30px;
-        }
-
-        p {
-            font-size: 20px;
-        }
-    }
-
-    .content {
-        margin-top: 100px;
-    }
-
-    .text {
-        width: 80%;
-
-        h2 {
-            font-size: 30px;
-        }
-    }
-
-    .mainText {
-        font-size: 20px;
-    }
-
-    .tech {
+    h2 {
         font-size: 10px;
+
     }
 
-    .github {
-        font-size: 10px;
+    h3 {
+        font-size: 8px;
+
     }
+
+    p {
+        font-size: 5px;
+
+    }
+}
+.forntImage{
+width: auto;
+height: 250px;
+}
+footer {
+    height: 220px;
+    width: 100%;
+}
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
 }
