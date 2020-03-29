@@ -153,3 +153,22 @@ function removeZoom3() {
 function removeZoom4() {
     document.querySelector("#doc-img").style.width = "70%";
 }
+//------------------------- fornthover ----------------------------------
+// mouse over
+document.querySelector("#texthover").addEventListener("mouseover", setfront)
+
+function setfront() {
+    let line = document.querySelector(".line");
+    line.classList.add("line-ani");
+    let text = document.querySelector(".introText")
+    text.classList.add("intro-ani")
+}
+// mouseout
+document.querySelector("#texthover").addEventListener("mouseout", removefront);
+
+function removefront() {
+    let line = document.querySelector(".line");
+    line.classList.remove("line-ani");
+    let text = document.querySelector(".introText")
+    text.classList.remove("intro-ani")
+}
