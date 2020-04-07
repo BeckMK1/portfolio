@@ -5,8 +5,7 @@ document.querySelector("#moreAni1").addEventListener("mouseover", setActiveAni)
 document.querySelector("#moreAni2").addEventListener("mouseover", setActiveAni2)
 document.querySelector("#moreAni3").addEventListener("mouseover", setActiveAni3)
 document.querySelector("#moreAni4").addEventListener("mouseover", setActiveAni4)
-
-
+document.querySelector("#moreAni5").addEventListener("mouseover", setActiveAni5)
 
 
 function setActiveAni() {
@@ -57,11 +56,24 @@ function setActiveAni4() {
     }
 };
 
+function setActiveAni5() {
+    let arrow1 = document.querySelectorAll("#moreAni5 .arrow1");
+
+    for (let arrow1s of arrow1) {
+        arrow1s.classList.add("arrow1-ani");
+    }
+    let arrow2 = document.querySelectorAll("#moreAni5 .arrow2");
+    for (let arrow2s of arrow2) {
+        arrow2s.classList.add("arrow2-ani");
+    }
+};
+
 // ------------------------ mouse out ------------------------------
 document.querySelector("#moreAni1").addEventListener("mouseout", removeActiveAni)
 document.querySelector("#moreAni2").addEventListener("mouseout", removeActiveAni2)
 document.querySelector("#moreAni3").addEventListener("mouseout", removeActiveAni3)
 document.querySelector("#moreAni4").addEventListener("mouseout", removeActiveAni4)
+document.querySelector("#moreAni5").addEventListener("mouseout", removeActiveAni5)
 
 function removeActiveAni() {
     let arrow1 = document.querySelectorAll("#moreAni1 .arrow1");
@@ -106,6 +118,17 @@ function removeActiveAni4() {
         arrow1s.classList.remove("arrow1-ani");
     }
     let arrow2 = document.querySelectorAll("#moreAni4 .arrow2");
+    for (let arrow2s of arrow2) {
+        arrow2s.classList.remove("arrow2-ani");
+    }
+};
+function removeActiveAni5() {
+    let arrow1 = document.querySelectorAll("#moreAni5 .arrow1");
+
+    for (let arrow1s of arrow1) {
+        arrow1s.classList.remove("arrow1-ani");
+    }
+    let arrow2 = document.querySelectorAll("#moreAni5 .arrow2");
     for (let arrow2s of arrow2) {
         arrow2s.classList.remove("arrow2-ani");
     }
