@@ -389,13 +389,6 @@ margin-left: 4px;
         width: 100%;
     }
 
-    .slideshow-container {
-        img {
-            width: auto;
-            height: 200px;
-        }
-    }
-
     .introText {
         h1 {
             font-size: 15px;
@@ -421,9 +414,6 @@ margin-left: 4px;
         width: auto;
         height: 250px;
     }
-    .contact-text p{
-    font-size: 14px;
-    }
 .mainText{
 font-size: 8px;
 
@@ -432,6 +422,66 @@ font-size: 8px;
 font-size: 14px;
 }
 .more{
+font-size: 8px;
+}
+.cornered{
+display: none;
+}
+.image{
+float: none;
+width:100%;
+height: auto;
+left: 20%;
+}
+.content{
+width: 100%;
+height: 10%;
+}
+.flip{
+flex-direction: column;
+.text {
+left: 20%;
+}
+
+.image {
+left: 20%;
+}
+}
+.text{
+width: 50%;
+float: none;
+}
+.name p{
+font-size: 20px;
+}
+nav a{
+font-size: 15px;
+}
+.line-ani {
+left: 25%;
+}
+.contact-text {
+width: 40%;
+height: auto;
+p{
+font-size: 9px;
+}    
+}
+.me-img img{
+    width: 75px;
+    height: 75px;  
+   }
+#contact {
+margin-bottom: 200px;
+}
+.footText{
+font-size: 8px;
+}
+.icons img{
+width: 25px;
+height: 25px;
+}
+.arrow1, .arrow2{
 font-size: 8px;
 }
 }
